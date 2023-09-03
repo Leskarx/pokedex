@@ -5,12 +5,15 @@ function Pokedetails() {
     const [pokemondetails,setpokemondetails]=useState({});
     
     const [loading,setloading]=useState(true);
-    const id = useParams().id;
+    const Pname = useParams().id;
+   
+    console.log("pokemon d",Pname);
 
     const fetchData = async () => {
+
         setloading(true);
        
-        const poke = await (await axios.get("https://pokeapi.co/api/v2/pokemon/" + id)).data;
+        const poke = await (await axios.get("https://pokeapi.co/api/v2/pokemon/" + Pname)).data;
         console.log(poke);
         // console.log(poke);
          setpokemondetails({

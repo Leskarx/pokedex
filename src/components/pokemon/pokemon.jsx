@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-function Pokemon({ name, img ,id }) {
+function Pokemon({ name, img }) {
     
     
     return (
        
-        <Link to={"/details/"+id} >
+        <Link to={"/details/"+name} >
             <div className=" hover:bg-[rgb(118,149,229)]  h-60 w-56 cursor-pointer flex flex-col justify-center items-center mt-10 ">
 
                 <img className=" h-52 w-48" src={img} alt="" />

@@ -1,12 +1,14 @@
 import { useState } from "react";
+import {useNavigate} from "react-router-dom"
 
 function Search() {
+  const navigate = useNavigate();
   const [text, settext] = useState('');
   const handleClickEnter = (event) => {
     if (event.key === 'Enter' || event.type == 'click') {
-      alert(text)
-
-
+      
+      navigate("/details/"+text)
+      window.location.reload()
     }
   };
 

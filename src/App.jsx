@@ -3,7 +3,8 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Nav from './components/nav'
-import PokemonList from './components/pokedex/pokemonList'
+import CustomRotes from "../src/routes/CustomRotes"
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 
@@ -11,10 +12,11 @@ function App() {
   return (
     <>
   
-    <Nav/>
-    <Nav/>
-    <PokemonList/>
-    
+  <BrowserRouter>
+  <Nav/>
+  <CustomRotes/>
+  </BrowserRouter>
+ 
 
 
   

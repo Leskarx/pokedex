@@ -13,7 +13,7 @@ function Pokedetails() {
 
         setloading(true);
        
-        const poke = await (await axios.get("https://pokeapi.co/api/v2/pokemon/" + Pname)).data;
+        const poke = await (await axios.get("https://pokeapi.co/api/v2/pokemon/" + Pname.toLocaleLowerCase())).data;
         console.log(poke);
         // console.log(poke);
          setpokemondetails({

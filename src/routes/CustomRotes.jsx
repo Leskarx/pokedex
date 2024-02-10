@@ -8,7 +8,6 @@ function CustomR() {
         <Route path="/details/:id" element={<Pokedetails/>}  />
 
        </Routes>
-    )
-    
+)    
 }
 export default CustomR;
